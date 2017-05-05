@@ -1,21 +1,19 @@
 {
-  "name": "dez-php/dez-di",
-  "description": "DezPHP - Dependency injection",
-  "keywords": ["php dependency injection","dependency injection", "dez-php dependency injection", "dez-di", "di"],
+  "name": "colibriphp/service-locator",
+  "description": "Service Locator Library",
+  "keywords": ["php service locator","service locator"],
   "authors": [
     {
-      "name": "Ivan Gontarenko",
-      "email": "vania.gontarenko@gmail.com"
+      "name": "Ivan Hontarenko",
+      "email": "stewie.dev@gmail.com"
     }
   ],
   "license": "MIT",
   "type": "library",
-  "require": {
-    "php": ">=5.5"
-  },
+  "require": {"php": ">=5.6"},
   "autoload": {
     "psr-4": {
-      "Dez\\DependencyInjection\\": "src/DependencyInjection"
+      "Colibri\\ServiceLocator\\": "src/"
     }
   }
 }
