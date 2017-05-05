@@ -113,11 +113,10 @@ class Container implements ContainerInterface
   public function get($name, array $parameters = [])
   {
     if (!isset($this->instances[$name])) {
-      $this->instances[$name] = $this->getNew($name, $parameters);
+      $this->instances[$name] = $this->factory($name, $parameters);
     }
     
     return $this->instances[$name];
-    
   }
   
   /**
@@ -126,10 +125,10 @@ class Container implements ContainerInterface
    * @return mixed|null|object
    * @throws ServiceLocatorException
    */
-  public function getNew($name, array $parameters = [])
+  public function factory($name, array $parameters = [])
   {
     $service = $this->getService($name);
-    $instance = $service->resolve($parameters, $this);
+    $instance = $service->resolve($parameters);
     
     return $instance;
   }

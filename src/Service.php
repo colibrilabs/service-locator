@@ -62,11 +62,10 @@ class Service implements ServiceInterface
   
   /**
    * @param array $parameters
-   * @param ContainerInterface $di
    * @return mixed|null|object
    * @throws ServiceLocatorException
    */
-  public function resolve(array $parameters = [], ContainerInterface $di)
+  public function resolve(array $parameters = [])
   {
     $instance = null;
     $definition = $this->definition;

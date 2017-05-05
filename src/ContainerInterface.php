@@ -3,6 +3,7 @@
 namespace Colibri\ServiceLocator;
 
 /**
+ * Interface ContainerInterface
  * @package Colibri\ServiceLocator
  */
 interface ContainerInterface extends \ArrayAccess, \IteratorAggregate, \Countable
@@ -17,9 +18,17 @@ interface ContainerInterface extends \ArrayAccess, \IteratorAggregate, \Countabl
   
   /**
    * @param $name
+   * @param array $parameters
    * @return mixed
    */
-  public function get($name);
+  public function get($name, array $parameters = []);
+  
+  /**
+   * @param $name
+   * @param array $parameters
+   * @return mixed
+   */
+  public function factory($name, array $parameters = []);
   
   /**
    * @param $name

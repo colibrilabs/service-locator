@@ -28,9 +28,8 @@ interface ServiceInterface
   
   /**
    * @param array $parameters
-   * @param ContainerInterface $d
    * @return mixed
    */
-  public function resolve(array $parameters = [], ContainerInterface $d);
+  public function resolve(array $parameters = []);
   
 }
