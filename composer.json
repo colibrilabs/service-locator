@@ -1,0 +1,21 @@
+{
+  "name": "dez-php/dez-di",
+  "description": "DezPHP - Dependency injection",
+  "keywords": ["php dependency injection","dependency injection", "dez-php dependency injection", "dez-di", "di"],
+  "authors": [
+    {
+      "name": "Ivan Gontarenko",
+      "email": "vania.gontarenko@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": ">=5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dez\\DependencyInjection\\": "src/DependencyInjection"
+    }
+  }
+}
