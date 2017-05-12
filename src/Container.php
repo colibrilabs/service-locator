@@ -35,7 +35,7 @@ class Container implements ContainerInterface
   /**
    * @return mixed
    */
-  public static function getContainer()
+  public function getContainer()
   {
     return self::$container;
   }
@@ -44,7 +44,7 @@ class Container implements ContainerInterface
    * @param mixed $container
    * @return void
    */
-  public static function setContainer($container)
+  public function setContainer(ContainerInterface $container)
   {
     self::$container = $container;
   }
@@ -163,6 +163,10 @@ class Container implements ContainerInterface
    */
   public function set($name, $definition)
   {
+    if (isset($this->instances[$name])) {
+      unset($this->instances[$name]);
+    }
+    
     $service = new Service($name, $definition);
     $this->services[$name] = $service;
     
