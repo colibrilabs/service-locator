@@ -55,7 +55,7 @@ class Container implements ContainerInterface
   static public function instance()
   {
     if (!static::$container || !(static::$container instanceof static)) {
-      static::setContainer(new static());
+      static::$container = new static();
     }
     
     return static::$container;
