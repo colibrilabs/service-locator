@@ -1,5 +1,5 @@
 {
-  "name": "colibrilabs/service-locator",
+  "name": "subapp/service-locator",
   "description": "Service Locator Library",
   "keywords": ["php service locator","service locator"],
   "authors": [
