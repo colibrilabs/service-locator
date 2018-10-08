@@ -1,10 +1,10 @@
 <?php
 
-namespace Colibri\ServiceLocator;
+namespace Subapp\ServiceLocator;
 
 /**
  * Class ServiceLocatorException
- * @package Colibri\ServiceLocator
+ * @package Subapp\ServiceLocator
  */
 class ServiceLocatorException extends \Exception
 {

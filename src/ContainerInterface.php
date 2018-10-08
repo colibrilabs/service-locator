@@ -1,10 +1,10 @@
 <?php
 
-namespace Colibri\ServiceLocator;
+namespace Subapp\ServiceLocator;
 
 /**
  * Interface ContainerInterface
- * @package Colibri\ServiceLocator
+ * @package Subapp\ServiceLocator
  */
 interface ContainerInterface extends \ArrayAccess, \IteratorAggregate, \Countable
 {

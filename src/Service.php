@@ -1,10 +1,10 @@
 <?php
 
-namespace Colibri\ServiceLocator;
+namespace Subapp\ServiceLocator;
 
 /**
  * Class Service
- * @package Colibri\ServiceLocator
+ * @package Subapp\ServiceLocator
  */
 class Service implements ServiceInterface
 {
